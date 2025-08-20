@@ -35,6 +35,8 @@ $ npm install
 ~~~
 $ cp .env.example .env
 $ nano .env
+~~~
+
 Colocar letra do posto do lado de CODE=
 Copiar o arquivo camim_firebase.json para a pasta src/config
 
