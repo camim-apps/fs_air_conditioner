@@ -37,8 +37,8 @@ $ cp .env.example .env
 $ nano .env
 ~~~
 
-Colocar letra do posto do lado de CODE=
-Copiar o arquivo camim_firebase.json para a pasta src/config
+* Colocar letra do posto do lado de CODE=
+* Copiar o arquivo camim_firebase.json para a pasta src/config
 
 ### Instalar o PM2
 
