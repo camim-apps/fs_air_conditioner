@@ -45,5 +45,18 @@ $ nano .env
 ~~~
 $ npm i -g pm2
 $ pm2 start --name "air_conditioner" ./src/app.js
+$ pm2 start --name "air_conditioner_cron" ./src/cron.js
+$ pm2 startup
 $ pm2 save
+~~~
+
+### Caso tenha que atualizar a máquina:
+
+~~~
+$ pm2 stop air_conditioner
+$ pm2 stop air_conditioner_cron
+$ git pull origin main
+$ npm install
+$ pm2 start air_conditioner
+$ pm2 start air_conditioner_cron
 ~~~
