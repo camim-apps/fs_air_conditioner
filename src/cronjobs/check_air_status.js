@@ -37,6 +37,6 @@ async function checkAirStatus() {
 }
 
 module.exports = {
-  schedule: "* * * * *",
+  schedule: "*/3 * * * *",
   handle: checkAirStatus,
 };
