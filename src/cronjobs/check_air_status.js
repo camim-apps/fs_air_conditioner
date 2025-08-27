@@ -24,8 +24,8 @@ async function checkAirStatus() {
     console.log('>>> Atualizando', data.ip)
 
     // Capturo o status do Sonoff
-    // const newStatus = await checkStatus(data.ip);
-    const newStatus = "UNAVAILABLE";
+    const newStatus = await checkStatus(data.ip);
+    // const newStatus = "UNAVAILABLE";
 
     // Atualizo o campo de dados
     data.status = newStatus;
