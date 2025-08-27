@@ -10,6 +10,8 @@ const fs = admin.firestore();
 const fsProduction = fs.collection("environments").doc("production");
 
 module.exports = {
+  fsAirConditioneirCollection: fsProduction
+    .collection("air_conditioners"),
   fsAirConditioneirList: fsProduction
     .collection("air_conditioners")
     .where("code", "==", process.env.CODE),
